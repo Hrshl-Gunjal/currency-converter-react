@@ -10,10 +10,6 @@ function App() {
 
 	const currencyInfo = useCurrencyInfo(from);
 
-    if (!currencyInfo) {
-		return <div>Loading...</div>; // Or any loading indicator
-	}
-
 	const options = Object.keys(currencyInfo);
 
 	const swap = () => {
@@ -48,7 +44,7 @@ function App() {
 								amount={amount}
 								onAmountChange={setAmount}
 								onCurrencyChange={(currency) =>
-									setAmount(amount)
+									setFrom(currency)
 								}
 								currencyOptions={options}
 								selectCurrency={from}
@@ -68,10 +64,10 @@ function App() {
 								label="To"
 								amount={convertedAmount}
 								onAmountChange={setConvertedAmount}
-								onCurrencyChange={(currency)=>setTo(currency)}
+								onCurrencyChange={(currency) => setTo(currency)}
 								currencyOptions={options}
 								selectCurrency={to}
-                                amountDisable={true}
+								amountDisable={true}
 							/>
 						</div>
 						<button

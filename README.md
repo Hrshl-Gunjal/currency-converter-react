@@ -2,7 +2,7 @@
 
 Just go to the following website:
 
-[https://hrshlgunjal.pythonanywhere.com/](https://currency-converter-react-tailwind.netlify.app/)
+https://currency-converter-react-tailwind.netlify.app/
 
 <b>Front-end:</b>----------> Reactjs, HTML, CSS, Javascript<br>
 <b>CSS Framework:</b>----> Tailwind CSS<br>
